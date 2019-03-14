@@ -1,0 +1,14 @@
+push constant 1234
+pop argument 0
+push constant 37
+pop argument 1
+push constant 9
+pop argument 2
+push constant 305
+pop argument 3
+push constant 300
+pop argument 4
+push constant 3010
+pop argument 5
+push constant 4010
+pop argument 6

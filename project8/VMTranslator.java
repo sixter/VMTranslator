@@ -1,5 +1,3 @@
-package VMTranslator;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -97,14 +95,15 @@ public class VMTranslator {
 		List<String> input = new ArrayList<String>();
 		
 		if (filename.endsWith(".vm")){
-			filename = filename.replace(".vm", "");
-			filepath = "C:/Users/User/Documents/Nand2Tetris/nand2tetris/projects/08/ProgramFlow/" + filename + "/" + filename + ".vm";
-			//filePath = fileName + "/" + fileName + ".vm";
-			input = Files.readAllLines(Paths.get(filepath));
+			//filename = filename.replace(".vm", "");
+			//filepath = "C:/Users/User/Documents/Nand2Tetris/nand2tetris/projects/08/ProgramFlow/" + filename + "/" + filename + ".vm";
+			//filePath = fileName + ".vm";
+			input = Files.readAllLines(Paths.get(filename));
 			CurrentClassName = filename;
 		}
 		else{
-			filepath = "C:/Users/User/Documents/Nand2Tetris/nand2tetris/projects/08/FunctionCalls/" + filename;
+			//filepath = "C:/Users/User/Documents/Nand2Tetris/nand2tetris/projects/08/FunctionCalls/" + filename;
+			filepath = filename;
 			File folder = new File(filepath);
 			File[] listOfFiles = folder.listFiles();
 			
